@@ -1,0 +1,778 @@
+path {
+   fill: inherit;
+   stroke: inherit;
+}
+
+body {
+   background-color: #fffffd;
+}
+
+.container {
+   width: 93rem;
+   max-width: 100%;
+   padding-left: 2.75rem;
+   padding-right: 2.75rem;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.bar {
+   background-color: #231815;
+}
+
+.bar__wrapper {
+   display: flex;
+   justify-content: end;
+   height: 2.5rem;
+}
+
+.bar__list {
+   display: flex;
+   align-items: center;
+   gap: 4.375rem;
+}
+
+.bar__item {
+}
+
+.bar__link {
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 100%;
+   color: #ffffff;
+}
+
+.language-switcher {
+}
+
+.language-switcher__item {
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 100%;
+   color: #ffffff;
+}
+
+.language-switcher__item_current {
+   display: none;
+}
+
+.header {
+   margin-bottom: 3.125rem;
+}
+
+.header__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 5rem;
+   padding-top: 0.75rem;
+   padding-bottom: 0.75rem;
+}
+
+.header__main {
+   height: 100%;
+}
+
+.header__logo {
+   height: 100%;
+   object-fit: cover;
+}
+
+.header__nav {
+}
+
+.header__list {
+   display: flex;
+   align-items: center;
+   gap: 6.25rem;
+}
+
+.header__item {
+}
+
+.header__link {
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: 100%;
+   color: #231815;
+   text-transform: uppercase;
+}
+
+.header__panel {
+   display: flex;
+   align-items: center;
+   gap: 1.125rem;
+   height: 2.4375rem;
+}
+
+.search {
+   width: 10.625rem;
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid #f5f5f5;
+   border-radius: 1.25rem;
+   padding: 0.625rem 1rem 0.625rem 1.3125rem;
+   cursor: pointer;
+}
+
+.search__field,
+.search__field::placeholder {
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 100%;
+   color: #231815;
+}
+
+.search__field::placeholder {
+   opacity: 0.5;
+}
+
+.search__field {
+   width: 80%;
+   background: none;
+   outline-color: transparent;
+}
+
+.search__icon {
+}
+
+.basket {
+   width: 8.625rem;
+   height: 2.4375rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.75rem;
+   border-radius: 1.25rem;
+   background-color: #000000;
+}
+
+.basket__wrapper {
+   position: relative;
+}
+
+.basket__icon {
+}
+
+.basket__text {
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 100%;
+   color: #ffffff;
+}
+
+.basket__counter {
+   width: 1.125rem;
+   height: 1.125rem;
+   position: absolute;
+   top: -0.1875rem;
+   right: -0.6875rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: #ffffff;
+   font-family: "Inter";
+   font-size: 0.75rem;
+   font-weight: 400;
+   line-height: 140%;
+   color: #1a1a1a;
+   z-index: 2;
+}
+
+.cards {
+   margin-bottom: 3.75rem;
+}
+
+.cards__title {
+   margin-bottom: 3.125rem;
+   font-family: sans-serif;
+   font-size: 2.75rem;
+   font-weight: 400;
+   line-height: 140%;
+}
+
+.cards__wrapper {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 3.125rem 2.5rem;
+}
+
+.card {
+}
+
+.cards__item {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.card__top {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   height: 29.8125rem;
+   border-radius: 1.25rem;
+   margin-bottom: 1.25rem;
+   overflow: hidden;
+}
+
+.card__top:hover > .card__overlay {
+   opacity: 1;
+   pointer-events: initial;
+}
+
+.card__image {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   z-index: -1;
+}
+
+.card__promotion {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 7.875rem;
+   height: 2.375rem;
+   top: 0.625rem;
+   left: 0.625rem;
+   border-radius: 1.25rem;
+   background-color: #231815;
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: 140%;
+   color: #ffffff;
+}
+
+.card__overlay {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 5.5rem;
+   margin-top: auto;
+   background-color: rgba(245, 245, 245, 0.7);
+   pointer-events: none;
+   transition-property: opacity;
+   transition-duration: 250ms;
+   opacity: 0;
+}
+
+.card__details {
+   width: 16.125rem;
+   height: 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1.25rem;
+   background-color: #e45302;
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: 140%;
+   color: #ffffff;
+}
+
+.card__info {
+}
+
+.card__name {
+   display: block;
+   margin-bottom: 0.75rem;
+   font-family: "Lato";
+   font-size: 1.125rem;
+   font-weight: 700;
+   line-height: 140%;
+}
+
+.card__price {
+}
+
+.price {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.price_with-discount {
+}
+
+.price__item {
+   font-family: "Lato";
+   font-size: 1.375rem;
+   font-weight: 700;
+   line-height: 140%;
+   color: #231815;
+}
+
+.price__number,
+.price__currency {
+   font-family: inherit;
+   font-size: inherit;
+   font-weight: inherit;
+   line-height: inherit;
+   color: inherit;
+}
+
+.price_with-discount > .price__item:first-child {
+   color: #e45302;
+}
+
+.price_with-discount > .price__item:last-child {
+   font-weight: 600;
+   color: #808080;
+}
+
+.price_with-discount > .price__item:last-child > .price__number {
+   text-decoration: line-through;
+}
+
+.price__number {
+}
+
+.price__currency {
+}
+
+.footer {
+   background-color: #0c0c0c;
+}
+
+.footer__wrapper {
+   height: 20rem;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 3.75rem;
+   padding-bottom: 3.75rem;
+}
+
+.footer__left {
+   width: 20.1875rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.footer__link-main {
+   width: 14.9375rem;
+}
+
+.footer__logo {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.footer__info {
+   font-family: "Roboto";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 140%;
+   color: #808080;
+}
+
+.footer__info_mobile {
+   display: none;
+   width: 23.875rem;
+   max-width: 100%;
+}
+
+.footer__text {
+}
+
+.footer__doc-link {
+   text-decoration-line: underline;
+   text-decoration-style: solid;
+}
+
+.footer__middle {
+   width: 33.4375rem;
+   max-width: 100%;
+}
+
+.footer__groups {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.footer__contacts {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.footer__group {
+}
+
+.footer__label {
+   margin-bottom: 1.25rem;
+   font-family: "Lato";
+   font-size: 1.125rem;
+   font-weight: 700;
+   line-height: 100%;
+   color: #ffffff;
+}
+
+.footer__links {
+   display: flex;
+   flex-direction: column;
+   gap: 1.25rem;
+}
+
+.footer__link {
+   width: max-content;
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 100%;
+   color: #f5f5f5;
+}
+
+.footer__right {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   gap: 4.5rem;
+}
+
+.footer__docs {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   gap: 1.25rem;
+}
+
+.footer__doc {
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 140%;
+   color: #808080;
+}
+
+.footer__cards {
+   width: 13.4375rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.footer__card {
+}
+
+.burger-button {
+   position: relative;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 0.2125rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   z-index: 15;
+}
+
+.burger-button__line {
+   display: block;
+   width: 57.5%;
+   height: 0.125rem;
+   background-color: #0d0b26;
+   transition-property: opacity, transform, background-color;
+   transition-duration: 250ms;
+}
+
+.burger-button_active > .burger-button__line {
+   background-color: white;
+}
+
+.burger-button_active > .burger-button__line:first-child {
+   transform: rotate(45deg) translate(0.1875rem, 0.25rem);
+}
+
+.burger-button_active > .burger-button__line:nth-child(2) {
+   opacity: 0;
+}
+
+.burger-button_active > .burger-button__line:last-child {
+   transform: rotate(-45deg) translate(0.1875rem, -0.25rem);
+}
+
+.burger-menu {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 6rem;
+   position: fixed;
+   top: 0;
+   right: -100vw;
+   width: 100vw;
+   padding: 1.25rem;
+   background-color: #0c0c0c;
+   z-index: 10;
+   transition-property: transform;
+   transition-duration: 250ms;
+}
+
+.burger-menu_active {
+   transform: translateX(-100vw);
+}
+
+.burger-menu__nav {
+}
+
+.burger-menu__list {
+   display: flex;
+   flex-direction: column;
+   gap: 0.2rem;
+}
+
+.burger-menu__item {
+}
+
+.burger-menu__link {
+   font-family: "Lato";
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: 100%;
+   color: #231815;
+   text-transform: uppercase;
+   color: white;
+}
+
+.burger-menu__panel {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.burger-menu__panel > .search {
+   order: 1;
+}
+
+@media screen and (max-width: 1600px) {
+   .cards__title {
+      font-size: 2.5rem;
+   }
+}
+
+@media screen and (max-width: 1250px) {
+   .header__wrapper {
+      height: 3.75rem;
+   }
+
+   .header__logo {
+      width: 8.8125rem;
+   }
+
+   .search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.4375rem;
+      height: 2.4375rem;
+      padding: 0;
+      border-radius: 50%;
+      background-color: #231815;
+   }
+
+   .search__icon path {
+      fill: white;
+   }
+
+   .search__field {
+      display: none;
+   }
+
+   .cards {
+      margin-bottom: 3.125rem;
+   }
+
+   .cards__title {
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+   }
+
+   .cards__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .footer__wrapper {
+      flex-direction: column;
+      height: 32.5625rem;
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+   }
+
+   .footer__logo {
+      width: 11.25rem;
+      height: 2.9375rem;
+   }
+
+   .footer__left {
+      margin-bottom: 2rem;
+   }
+
+   .footer__middle {
+      width: 100%;
+   }
+
+   .footer__contacts {
+      display: contents;
+   }
+
+   .footer__links {
+      gap: 1.875rem;
+   }
+
+   .footer__info {
+      display: none;
+   }
+
+   .footer__info.footer__info_mobile {
+      display: block;
+   }
+
+   .footer__right {
+      position: relative;
+      top: -6.625rem;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+      row-gap: 5.125rem;
+   }
+
+   .footer__docs {
+      width: 100%;
+      align-items: start;
+   }
+}
+
+@media screen and (max-width: 1100px) {
+   .header__list {
+      gap: 3rem;
+   }
+}
+
+@media screen and (max-width: 1010px) {
+   .cards__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (max-width: 968px) {
+   .bar {
+      display: none;
+   }
+
+   .header__list {
+      display: none;
+   }
+
+   .header__panel {
+      display: none;
+   }
+
+   .burger-button {
+      display: flex;
+   }
+}
+
+@media screen and (max-width: 715px) {
+   .container {
+      padding-right: 2.1875rem;
+      padding-left: 2.1875rem;
+   }
+
+   .header {
+      margin-bottom: 2.5rem;
+   }
+
+   .cards {
+      margin-bottom: 2.5rem;
+   }
+
+   .cards__title {
+      width: 12rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+   }
+
+   .cards__wrapper {
+      gap: 1.875rem 0.625rem;
+   }
+
+   .card__top {
+      height: 14.375rem;
+      margin-bottom: 0.625rem;
+   }
+
+   .card__promotion {
+      width: 4.375rem;
+      height: 1.5rem;
+      font-size: 0.875rem;
+   }
+
+   .card__overlay {
+      display: none;
+   }
+
+   .card__name {
+      font-size: 1rem;
+   }
+
+   .price {
+      gap: 0.625rem;
+   }
+
+   .price__item {
+      font-size: 1rem;
+   }
+
+   .footer__wrapper {
+      height: initial;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+   }
+
+   .footer__groups {
+      margin-bottom: 1.875rem;
+      flex-direction: column;
+      gap: 1.875rem;
+   }
+
+   .footer__links {
+      gap: 1.25rem;
+   }
+
+   .footer__info {
+      display: none;
+   }
+
+   .footer__right {
+      position: static;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: start;
+      gap: 0;
+   }
+
+   .footer__docs {
+      margin-bottom: 4.5rem;
+   }
+
+   .footer__cards {
+      margin-bottom: 1.875rem;
+   }
+}
